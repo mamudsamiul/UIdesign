@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="shortcut icon" href="..\assets\BL_logo_square_png.png">
+        <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+           * {
+              box-sizing: border-box; 
+             }
+             body {
+              display: flex;
+              min-height: 100vh;
+              flex-direction: row;
+              margin: 0;
+             }
+             .outer-col-1 {
+              background: #D7E8D4;
+              flex: 1;
+             }
+             .outer-col-2 {
+              display: flex;
+              flex-direction: column;
+              flex: 5;
+            }
+            .inner-row {
+              display: flex;
+              flex-direction: row;
+           }
+           .inner-col {
+            flex: 4;
+           }
+           .inner-row article {
+           min-height: 60vh;
+           }
+            .inner-row aside {
+           background: beige;
+           flex: 1;
+          }
+          header{
+            text-align: center;
+          }
+          header, footer {
+           background: yellowgreen;
+           height: 20vh;
+          }
+           header, footer, article, nav, aside {
+          padding: 1em;
+          }
+        </style>
+    </head>
+    <body>
+        <nav class="outer-col-1"><p>Useful links</p>
+            <p><a href ="https://en.wikipedia.org/wiki/Internet_of_things">wikipedia</a></p>
+        </nav>
+        <div class="outer-col-2">
+            <header><h1>Internet of things (IOT)</h1></header>
+          <div class="inner-row">
+            <div class="inner-col">
+              <article><h2>What is IOT?</h2>
+                <p>The Internet of things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.[1][2][3][4]</p>
+
+                <p>The definition of the Internet of things has evolved due to the convergence of multiple technologies, real-time analytics, machine learning, commodity sensors, and embedded systems.[1] Traditional fields of embedded systems, wireless sensor networks, control systems, automation (including home and building automation), and others all contribute to enabling the Internet of things. In the consumer market, IoT technology is most synonymous with products pertaining to the concept of the "smart home", including devices and appliances (such as lighting fixtures, thermostats, home security systems and cameras, and other home appliances) that support one or more common ecosystems, and can be controlled via devices associated with that ecosystem, such as smartphones and smart speakers.
+                There are a number of serious concerns about dangers in the growth of IoT, especially in the areas of privacy and security, and consequently industry and governmental moves to address these concerns have begun including the development of international standards.</p> 
+            </article>
+                <footer>Footer</footer>
+            </div>
+              <aside><h3>References</h3>
+                <p>IOT for beginners</p>
+              </aside>
+          </div>
+        </div>
+    </body>
+</html>

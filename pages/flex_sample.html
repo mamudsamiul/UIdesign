@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset = "UTF-8">
+       <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+            body{ padding: 2em; }
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem{
+            background: gold;
+        }
+        .sideBarRightItem{
+            background: hotpink;
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+        .mainContentItem{ flex: 3 0px;}
+        .sideBarLeftItem{
+            order: 1;
+        }
+        .mainContentItem{
+            order: 2;
+        }
+        .sideBarRightItem{
+            order: 3;
+        }
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911</p>
+                </article>    
+                <article>
+                    <h2>Second Article</h2>
+                    <p>The foundation stone of New Delhi was laid by Emperor George V during the Delhi Durbar of 1911. It was designed by British architects Sir Edwin Lutyens and Sir Herbert Baker. The new capital was inaugurated on 13 February 1931, by Viceroy and Governor-General of India Lord Irwin. </p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Mumbai (formerly called Bombay) is a densely populated city on India’s west coast.</p>
+                </article>
+            </section>
+            <sideBar class ="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class ="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
